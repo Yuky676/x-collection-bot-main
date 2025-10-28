@@ -46,7 +46,7 @@ def collect_tweets_bot():
         headers = {"Authorization": f"Bearer {token}"}
 
         args = {
-            "query": "(webclass OR ウェブクラス) lang:ja",
+            "query": "(keyword OR キーワード) lang:ja",
             "max_results": 40,
             "tweet.fields": "lang,created_at,author_id",
             "expansions": "author_id",
